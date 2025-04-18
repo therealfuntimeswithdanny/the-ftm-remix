@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Hub</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    /* Header and Navigation */
+    header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8em;
+      margin-left: 10px;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin-right: 10px;
+    }
+    
+    nav ul li {
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      color: #dddddd;
+    }
+    
+    /* Section Styling */
+    section {
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    
+    /* About Section */
+    #about .text-content {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1em;
+    }
+    
+    #about .text-content p {
+      margin-bottom: 15px;
+    }
+    
+    /* Top 3 Artists Section */
+    .artists-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .artist-item {
+      background-color: #f7f7f7;
+      border: 1px solid #e7e7e7;
+      border-radius: 8px;
+      padding: 20px;
+      width: 370px;
+      text-align: left;
+    }
+    
+    .artist-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    
+    .artist-info h3 {
+      margin-bottom: 10px;
+      font-size: 1.6em;
+    }
+    
+    .artist-info p {
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    
+    .listen-btn {
+      display: inline-block;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .listen-btn:hover {
+      background-color: #333333;
+    }
+    
+    /* Top 5 Playlists Section */
+    .playlists-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .playlist-item {
+      background-color: #f7f7f7;
+      border: 1px solid #e7e7e7;
+      border-radius: 8px;
+      padding: 10px;
+      width: 370px;
+    }
+    
+    
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      .artists-grid,
+      .playlists-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .artist-item {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Music Hub</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#artists">Top Artists</a></li>
+          <li><a href="#playlists">Top Playlists</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>Welcome </h2>
+      <div class="text-content">
+        Apple Music web player collects information associated with a unique identifier that is specific to the domain of the page you visit, if you are not signed in to Apple Music. If you are signed in to Apple Music, the identifier is consistent across all pages in which the player loads.<br>
+        These identifiers last for one day and are not linked to your Apple ID.<br>
+        If you are signed in to Apple Music in your browser and interact with the player (e.g. play music), we collect the same information as when you use the Music app on your device or desktop along with the domain of the page.
+      </div>
+    </div>
+  </section>
+  
+  <!-- Top 3 Artists Section -->
+  <section id="artists">
+    <div class="container">
+      <h2>Top 3 Artists</h2>
+      <div class="artists-grid">
+        <!-- Artist Item 1 -->
+        <div class="artist-item">
+          <div class="artist-info">
+            <!-- Replace href with the link to Artist 1's music page -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7irQApL7q6iOzs8mDY3xDz?utm_source=generator" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <!-- Artist Item 2 -->
+        <div class="artist-item">
+          <div class="artist-info">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5J9abvHhGDZoHVTfv9bg78?utm_source=generator" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <!-- Artist Item 3 -->
+        <div class="artist-item">
+          <div class="artist-info">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6s22t5Y3prQHyaHWUN1R1C?utm_source=generator" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Top 5 Playlists Section -->
+  <section id="playlists">
+    <div class="container">
+      <h2>Top 5 Playlists</h2>
+      <div class="playlists-grid">
+        <div class="playlist-item">
+          <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/my-mix/pl.u-leyl0JPHMvKe68X"></iframe>
+        </div>
+        <div class="playlist-item">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3zBmajnFecCmdd5zPyXHfn?utm_source=generator&theme=0" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="playlist-item">
+          <iframe src="https://open.spotify.com/embed/playlist/your_playlist_id_3" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="playlist-item">
+          <iframe src="https://open.spotify.com/embed/playlist/your_playlist_id_4" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="playlist-item">
+          <iframe src="https://open.spotify.com/embed/playlist/your_playlist_id_5" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Music Hub. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

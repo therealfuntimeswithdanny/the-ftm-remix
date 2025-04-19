@@ -162,6 +162,10 @@
       text-align: center;
     }
     
+    d {
+   display: block;
+   }
+
     /* Responsive Styles */
     @media (max-width: 768px) {
       nav ul {
@@ -183,6 +187,11 @@
       }
     }
     a { color: white;}
+    @media only screen and (max-width: 768px) {
+  d {
+    display: none;
+  }
+}
   </style>
 </head>
 <body>
@@ -193,13 +202,13 @@
         <div class="logo"><b>The <i>FTM</i> Remix</b> by Funtimes Media</div>
         <ul>
           <li><a href="https://theremixcummunity.funtimesmedia.uk">Community <i>Beta</i></a></li>
-          <li><a>|</a></li>
+          <d><li><a>|</a></li></d>
           <li><a href="#artists">Artists</a></li>
           <li><a href="#playlists">Playlists</a></li>
           <li><a href="#colorlist"><i>ColorList</i></a></li>
           <li><a href="https://theremixcummunity.funtimesmedia.uk#add-playlist">Add Playlist</a></li>
-          <li><a>|</a></li>
-          <li><a href="#contact"><i class="fa-solid fa-address-book"></i></a></li>
+          <d><li><a>|</a></li></d>
+          <li><a href="#contact"><i class="fa-solid fa-pen-to-square"></i></a></li>
         </ul>
       </nav>
     </div>
